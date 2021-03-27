@@ -1,0 +1,302 @@
+/* Estilo para todo el cuerpo
+de la página. El margen es de 0*/
+body {
+    margin: 0;
+    font-family:Arial;
+}
+
+/* Estilo para la cabecera*/
+.cabecera {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* El logo de la cabecera se sitúa a
+la izquierda asignando un valor de margen 
+derecho e izquierdo */
+.cabecera img {
+    float: left;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+/* La clase menú definirá el estilo de
+una barra de menú situada debajo de la cabecera
+*/
+.menu {
+    /* background-color: #A9A9A9; */
+    background-color: dimgrey;
+    overflow: hidden;
+}
+
+/* Estilo para los enlacea contenido en el menú.
+Se elimina la apariencia asignada por defecto a los
+enlaces y se muestran en forma de bloque situados a
+la izquierda de forma que aparezcan todos en la misma
+línea */
+.menu a {
+    padding: 10px 15px;
+    font-size: 105%;
+    text-decoration: none;
+    color:#f5f5f5;
+    display: block;
+    float: left;
+    transition: 0.15s;
+}
+
+/* Cada vez que el puntero se sitúe sobre algún
+enlace del menú este cambia de color */
+.menu a:hover {
+    /* background-color: #696969; */
+    background-color: #404040;
+}
+
+/* Estilo para la barra auxiliar que se mostrará
+en la página. Se sitúa a la izquierda asignando
+una anchura en su contenedor (body) de un 15%
+*/
+.auxiliar {
+    overflow-wrap: break-word;
+    float: left;
+    margin-right: 1%;
+    background-color: #f5f5f5;
+    width: 15%;
+    text-align: center;
+}
+
+/* Estilo para cada enlace contenido en la barra
+auxiliar. Se muestran en bloque y se aumenta el
+tamaño para visualizarlos de manera más cómoda. */
+.auxiliar a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 105%;
+    color:black;
+    transition: 0.15s;
+}
+
+/* Cada vez que el puntero se sitúa sobre los enlaces
+de la barra auxiliar cambia de color tanto su fondo
+como el texto*/
+.auxiliar a:hover {
+    color: #f5f5f5;
+    background-color: #A9A9A9;
+}
+
+/* La sección del evento ocupará un 70% del
+body*/
+.event {
+    width: 70%;
+    margin-left: 16%;
+    margin-right: 5%;
+} 
+
+/* Aumenta el tamaño del título del evento */
+.event h1 {
+    font-size: 3em;
+}
+
+/* Define el estilo de las imágenes contenidas en
+el evento. Se usa float right para que puedan entremezclarse
+con el texto. Se define también su anchura y altura*/
+.event_image {
+    float: right;
+    width: 10%;
+    height: auto;
+    margin-right: 5%;
+}
+
+/* La clase enlaces gestiona la apariencia del apartado de enlaces de 
+interés relacionados con el evento. Tienen un margen superior
+con respecto al texto del evento */
+.enlaces {
+    margin-top: 2%;
+}
+
+/* Estilo de los enlaces de interés. Se añade la propiedad
+overflow-wrap: break-word para que en el caso de que el texto
+se salga de las dimensiones del contenedor continue en la siguiente
+línea y no se salga del mismo */
+.enlaces a {
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    background-color: dimgrey;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px 10px;
+    transition: 0.15s;
+    margin-right: 1.3%;
+}
+
+/* Cada vez que el puntero pasa por alguno de los
+enlaces estos cambian su color de fondo */
+.enlaces a:hover {
+    background-color: #404040;
+    transform: scale(1.02);
+}
+
+#boton {
+    padding: 10px 20px 10px;
+    background-color: dimgrey;
+    color: white;
+    border: none;
+    font-size: inherit;
+    transition: 0.15s;
+}
+
+#boton:hover {
+    background-color: #404040;
+    transform: scale(1.02);
+}
+
+/* Define el estilo de una barra lateral para 
+contener enlaces a las redes sociales de la página
+*/
+.social {
+    background-color: #f5f5f5;
+    width: 15%;
+    text-align: center;
+    float: right;
+}
+
+.social h3 {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+/* Estilo para cada enlace de la barra para redes sociales*/
+
+.social a {
+    overflow-wrap: break-word;
+    text-decoration: none;
+    color: black;
+    background-color: #f5f5f5;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.15s;
+}
+
+/* Cada enlace se representa con una imagen
+de la red social a la que referencia */
+.social img {
+    width: 15%;
+}
+
+/* Al siturse sobre el enlace a Facebook este
+cambia al color característico de Facebook */
+.social #facebook:hover {
+    background-color: #3B5998;
+    color: white;
+}
+
+/* Al situarse sobre el enlace a Instagram este
+cambia al color característico de Instagram */
+.social #instagram:hover {
+    background-color: #3f729b;
+    color: white;
+}
+
+/* Al situarse sobre el enlace a Twitter este
+cambia al color característico de Twitter */
+.social #twitter:hover {
+    background-color: #00acee;
+    color: white;
+}
+
+#panel_comentarios {
+    float: left;
+    display: none;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1%;
+    border-color: #404040;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 47%;
+    overflow-wrap: break-word;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+#datos, .info_comentario{
+    font-size: small;
+    color:#404040;
+}
+
+.formulario {
+    margin-top: 10%;
+}
+
+input[type=text], #comentario {
+    margin-bottom: 2%;
+    font-size: 105%;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: 0.2s;
+    outline: none;
+}
+
+input[type=text]:focus, #comentario:focus {
+    border: 2px solid #555;
+}
+
+.comment {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    padding: 5px;
+}
+
+#new_comment {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    padding: 5px;
+    display: none;
+}
+
+#autor, #email {
+    width: 50%;
+    padding: 10px 20px;
+}
+
+#comentario {
+    width: 90%;
+    height: 150px;
+    padding: 10px 20px;
+    font-size: 105%;
+    font-family: Arial;
+}
+
+#enviar {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 5px 10px 5px;
+    background-color: dimgrey;
+    color: white;
+    border: none;
+    font-size: inherit;
+    transition: 0.15s;
+}
+
+#enviar:hover {
+    background-color: #404040;
+    transform: scale(1.02);
+}
+
+/* El pie de la imagen se sitúa a la izquierda
+ocupando el total del ancho de la página.*/
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: small;
+    padding: 10px;
+    background-color: #f5f5f5;
+}

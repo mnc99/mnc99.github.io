@@ -1,0 +1,156 @@
+/* Estilo para todo el cuerpo
+de la página. El margen es de 0*/
+body {
+    margin: 0;
+    font-family:Arial;
+}
+
+/* Estilo para la cabecera*/
+.cabecera {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* El logo de la cabecera se sitúa a
+la izquierda asignando un valor de margen 
+derecho e izquierdo */
+.cabecera img {
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* La clase menú definirá el estilo de
+una barra de menú situada debajo de la cabecera
+*/
+.menu {
+    /* background-color: #A9A9A9; */
+    background-color: dimgrey;
+    overflow: hidden;
+}
+
+/* Estilo para los enlaces contenidos en el menú.
+Se elimina la apariencia asignada por defecto a los
+enlaces y se muestran en forma de bloque situados a
+la izquierda de forma que aparezcan todos en la misma
+línea */
+.menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 105%;
+    color:#f5f5f5;
+    display: block;
+    float: left;
+    transition: 0.15s;
+}
+
+/* Cada vez que el puntero se sitúe sobre algún
+enlace del menú este cambia de color */
+.menu a:hover {
+    /* background-color: #696969; */
+    background-color: #404040;
+}
+
+/* Estilo para la barra auxiliar que se mostrará
+en la página. Se sitúa a la izquierda asignando
+una anchura en su contenedor (body) de un 15%
+*/
+.auxiliar {
+    overflow-wrap: break-word;
+    float: left;
+    margin-right: 1%;
+    background-color: #f5f5f5;
+    width: 15%;
+    text-align: center;
+}
+
+/* Estilo para cada enlace contenido en la barra
+auxiliar. Se muestran en bloque y se aumenta el
+tamaño para visualizarlos de manera más cómoda. */
+.auxiliar a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 105%;
+    text-decoration: none;
+    color:black;
+    transition: 0.15s;
+}
+
+/* Cada vez que el puntero se sitúa sobre los enlaces
+de la barra auxiliar cambia de color tanto su fondo
+como el texto*/
+.auxiliar a:hover {
+    color: #f5f5f5;
+    background-color: #A9A9A9;
+}
+
+/* Estilo para el section en html. Ocupará el espacio
+restande de su contenedor y tendrá un margen de un 16%
+ya que la barra auxiliar ocupa un 15% más un margen derecho
+de un 1% */
+.principal {
+    width: 85%;
+    margin-left: 16%;
+}
+
+/* Define el estilo para cada divisón de la galería de
+imágenes. Éstas se colocan a la izquierda y se añaden
+bordes redondeados para contener a las imágenes */
+div.galeria {
+    float:left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 45%;
+    border: 1px;
+    border-radius: 1%;
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+/* Cada imagen ocupa el total de su contenedor */
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+/* Cada imagen tiene asignada una descripción. En texto
+se alinea en el centro del contenedor */
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Se cambie el formato de los enlaces de la
+descripción de la imagen que llevarán al evento
+concreto*/
+div.desc a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Cada vez que el usurio sitúe el puntero sobre
+una división concreta cambia el color del fondo
+y del texto */
+div.galeria:hover {
+    background-color: #A9A9A9;
+    color: #f5f5f5;
+    transform: scale(1.02);
+}
+
+/* El pie de la imagen se sitúa a la izquierda
+ocupando el total del ancho de la página.*/
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: small;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+

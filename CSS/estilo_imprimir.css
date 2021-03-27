@@ -1,0 +1,69 @@
+/* Estilo para todo el cuerpo
+de la página. El margen es de 0*/
+body {
+    margin: 0;
+    font-family:Arial;
+}
+
+/* Estilo para la cabecera*/
+.cabecera {
+    text-align: center;
+    padding: 10px;
+}
+
+/* El logo de la cabecera se sitúa arriba
+del título de la página web */
+.cabecera img {
+    float:inherit;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+/* Dado que la página está pensada para
+imprimir, no se muestran ni el menú, ni 
+la barra auxililar y social, ni otros enlaces
+de interés */
+.menu , .auxiliar, .social, .enlaces {
+    display: none;
+}
+
+/* La sección para del evento ocupa ahora
+todo el body, se le define un margen izquierdo
+y derecho */
+.event {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Todo el texto que contiene la sección para el evento
+aumenta de tamaño */
+
+.event h1{
+    font-size: xx-large;
+}
+
+
+.event h4 {
+    font-size: 120%;
+}
+
+.event p {
+    font-size: larger;
+}
+
+.event img {
+    float: right;
+    width: 15%;
+}
+
+/* El pie de la imagen se sitúa a la izquierda
+ocupando el total del ancho de la página.*/
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: small;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
