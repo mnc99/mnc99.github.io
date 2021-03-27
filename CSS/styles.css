@@ -154,7 +154,7 @@ footer {
 }
 
 @media only screen and (max-width:620px) {
-    .auxiliar, .principal {
+    .auxiliar, .principal .menu{
         width: 100%;
     }
 }
