@@ -1,87 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="es">
-    <head>
-        <title>TennisWorld</title>
-        <meta name="author" content="Moisés Noguera Carrillo"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="/CSS/styles.css"/>
-    </head>
 
-    <body>
-        <!-- Cabecera de la página web. Contiene el logo de la página -->
-        <header class="cabecera">
-            <img src="/images/tennis-ball-3.png"/>
-            <h1>TennisWorld</h1>
-            <h2>Tu sitio web para informarte acerca de todos los torneos y 
-            eventos del ATP Tour</h2>
-        </header>
+<head>
+    <title>P2: Star Room</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="../libs/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <!-- Barra de navegación con una serie de enlaces -->
-        <nav class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="/HTML/eventos.html">Wimbledon</a>
-            <a href="#">Roland Garros</a>
-            <a href="#">Australian Open</a>
-            <a href="#">US Open</a>
-        </nav>
+    <!-- <script type="importmap">
+          { "imports": { "three": "../libs/three.module.js" } }
+    </script>
+    
+    <script type="module" src="./MyScene.js"></script>     -->
+    <style>
+        body{
+            /* margin: 0;
+            overflow: hidden; */
+            background-image: url("../imgs/star_wars_background.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
 
-        <!-- Barra con información extra acerca de la página web -->
-        <aside class="auxiliar">
-            <h3>Enlaces de interés</h3>
-            <a href="https://www.atptour.com/es/rankings"> Ranking ATP </a>
-            <a href="#"> Sobre nosotros </a>
-            <a href="#"> Contáctanos </a>
-        </aside>
+        /* Show container in center of the page */
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* width: 100%; */
+            /* height: 100%; */
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-        <!-- Representa la sección principal donde se sitúan los eventos -->
-        <section class="principal">
-            <h1>Grand Slams del ATP Tour</h1>
+        /* Change text color to white */
+        h1, p{
+            color: #FFE81F;
+        }
 
-            <!-- Cada div perteneciente a la clase galeria representa un evento. Cada evento contiene
-            una imagen y una breve descripción a través de un div que forma parte de la clase desc. -->
-            <div class="galeria">
-                <a href="/HTML/eventos.html">
-                    <img src="/images/roger-federe-wimbledon.jpg" alt="Torneo de Wimbledon"/>
-                </a>
-                <div class="desc">
-                    <a href="/HTML/eventos.html"> Wimbledon (28 Junio-11 Julio) </a>
-                </div>
+        /* Change button color to yellow */
+        .btn-secondary{
+            background-color: #FFE81F;
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+
+  <!-- Button to navigate to escapeRoom.html page -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center" style="font-size: 70px;">Star Room</h1>
             </div>
-
-            <div class="galeria">
-                <a href="/images/rafael-nadal-roland-garros.jpg">
-                    <img src="/images/rafael-nadal-roland-garros.jpg" alt="Torneo de Roland Garros"/>
-                </a>
-                <div class="desc">
-                    Roland Garros (17 Mayo-6 Junio)
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center" style="font-size: 35px;">¡Bienvenido a Star Room! Para poder salir de aquí, deberás resolver una serie de pruebas. ¡Suerte!</p>
             </div>
-
-            <div class="galeria">
-                <a href="/images/djokovic-australian-open.jpg">
-                    <img src="/images/djokovic-australian-open.jpg" alt="Torneo del Open de Australia"/>
-                </a>
-                <div class="desc">
-                    Australian Open (10 Enero-21 Febrero)
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center" style="font-size: 30px;">Pulsa el botón para comenzar.</p>
             </div>
-
-            <div class="galeria">
-                <a href="/images/dominic-thiem-us-open.jpg">
-                    <img src="/images/dominic-thiem-us-open.jpg" alt="Torneo del Open de EEUU"/>
-                </a>
-                <div class="desc">
-                    US Open (30 Agosto-12 Septiembre)
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="window.location.href='escapeRoom.html'">Comenzar</button>
             </div>
-            
-        </section>
-
-        <!-- Pie de la página web -->
-        <footer>
-            <p>
-                © 2021 - mnc99
-            </p>
-        </footer>
-    </body>
+        </div>
+</body>
 </html>
